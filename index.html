@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="inputData">
+    <div>
+        <label for="AnualInc">Enter gross anual income<abbr title="Gross Annual income is your total salary in a year before any deductions"><i class="fa-solid fa-circle-question"></i></abbr></label><br>
+        <input type="text" name="" id="AnnInc" placeholder="Enter gross anual income">
+        <br>
+        <span id="annIncError" style="color: black;"></span>
+    </div>
+        <br><br>
+        <div>
+        <label for="Extrainc">Enter Extra income<abbr title="Extra income is your extra salary in a year before any deductions"><i class="fa-solid fa-circle-question"></i></abbr></label><br>
+        <input type="text" name="" id="ExtraInc" placeholder="Enter Extra income">
+        <br>
+        <span id="ExtraError" style="color: black;"></span>
+    </div>
+        <br><br>
+    <div>
+        <label for="Age">Enter age group</label><br>
+        <select id="Age">
+            <option value="1">< 40</option>
+            <option value="2">≥ 40 & < 60</option>
+            <option value="3">≥ 60</option>
+            <br>
+        <span id="ageError" style="color: black;"></span>
+        </select>
+    </div>        
+        <br><br>
+    <div>
+        <label for="deduction">Enter total applicable deduction<abbr title="Total deductions"><i class="fa-solid fa-circle-question"></i></abbr></label><br>
+        <input type="text" name="" id="Deduction" placeholder="Enter total applicable deduction">
+        <br>
+        <span id="deductError" style="color: black;"></span>
+        <br><br>
+    </div>
+        <button onclick="calculate()">Submit</button>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tax Calculation Result:</h2>
+            <div id="taxResult"></div>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

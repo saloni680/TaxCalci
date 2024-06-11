@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20220624/pngtree-tax-calculation-with-calculator-service-plan-tax-photo-image_22359246.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28
+}
+
+.inputData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+    width: 500px;
+    border: 2px solid black;
+    font-size: larger;
+    backdrop-filter: blur(40px); 
+    background-color: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
+    padding: 20px; 
+    font-weight: 600;
+    box-shadow: 5px 5px 20px 10px;
+}
+::placeholder{
+    font-size: 18px;
+}
+
+i.fa-solid.fa-circle-info {
+    margin-top: -30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+input[type='text'] {
+    height: 30px;
+    width: 100%;
+}
+select#Age{
+    height: 25px;
+    width: 100%;
+}
+button{
+    height: 50px;
+    width: 100px;
+    font-size: 25px;
+    background-color:transparent;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color: #75E6A4;
+}
